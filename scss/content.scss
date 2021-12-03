@@ -1,0 +1,95 @@
+.content {
+    .slide-banner{
+        position: relative;
+        .slide-show {
+            img{
+                width: 100%;
+            }
+        }
+        .slide-show{
+            .logo-title{
+                top: 200px;
+                left: 25px;
+                position: absolute;
+                p{
+                    font-size: 44px;
+                    color: #ffffff;
+                }
+                button{
+                    padding: 12px 23px;
+                    margin: 20px 0px;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    border: none;
+                    background-color: #d52b1e;
+                    color: #fff;
+                    cursor: pointer;
+                }   
+            }
+        }
+    }
+    .slick-dots{
+        position:absolute;
+        bottom: 72px;
+        left: 50%;
+        transform: translate(-50%, 50px);
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 0 30px;
+        font-size: 0px;
+    }
+    .slick-dots button{
+        font-size: 0px;
+        border-radius: 50%;
+        width: 50px;
+        height: 2px;
+        border: none;
+        outline: none;
+        margin-top: 30px;
+    }.slick-dots .slick-active button{
+        background-color: #d52b1e;
+    }
+    .product-content{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 632px;
+            height: 418px;
+        }
+        .product-img{
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                img{
+                    opacity: 0.8;
+                }
+                .product-title{
+                    background-color: #171718;
+                }
+            }
+            .product-title{
+                cursor: pointer;
+                text-align: center;
+                padding: 15px 20px 10px;
+                bottom: 4px;
+                width: 340px;
+                height: 82px;
+                background-color: #d52b1e;
+                position: absolute;
+                p{
+                    font-size: 24px;
+                    color: #fff;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 24px;
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

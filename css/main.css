@@ -1,0 +1,221 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  max-width: 1230px;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+}
+
+.header .header-top {
+  border-bottom: 1px solid #d6d6d6;
+}
+.header .header-top .top-nav {
+  display: flex;
+  justify-content: center;
+}
+.header .header-top .top-nav li {
+  display: inline-block;
+  padding: 12px 20px;
+}
+.header .header-top .top-nav li a {
+  text-decoration: none;
+  color: #888;
+  font-weight: 300;
+  font-size: 12px;
+}
+.header .header-top .top-nav .nav-active {
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #d52b1e;
+}
+.header .header-top .top-nav .nav-active::after {
+  position: absolute;
+  content: "";
+  top: -12px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #d52b1e;
+}
+.header .header-line {
+  height: 15px;
+  background-color: #f9f9f9;
+}
+.header .header-bottom {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 53px;
+  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+}
+.header .header-bottom .bottom-logo {
+  height: 60px;
+  width: 97px;
+  padding-top: 10px;
+}
+.header .header-bottom .bottom-logo img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.header .header-bottom .bottom-nav li {
+  display: inline-block;
+  padding: 5px;
+}
+.header .header-bottom .bottom-nav li:hover .fa-caret-down {
+  transform: rotate(90deg);
+}
+.header .header-bottom .bottom-nav li:hover a {
+  color: #d52b1e;
+}
+.header .header-bottom .bottom-nav li a {
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  text-decoration: none;
+  color: #666;
+  font-weight: 900;
+  font-size: 11px;
+}
+.header .header-bottom .bottom-nav li a .fa-caret-down {
+  padding-left: 4px;
+}
+.header .header-bottom .bottom-nav li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #d52b1e;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.header .header-bottom .bottom-nav li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.header .header-bottom .bottom-seach {
+  margin-right: 18px;
+  padding: 5px 23px;
+  font-size: 20px;
+  color: #6a6a6a;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+}
+.header .sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.content .slide-banner {
+  position: relative;
+}
+.content .slide-banner .slide-show img {
+  width: 100%;
+}
+.content .slide-banner .slide-show .logo-title {
+  top: 200px;
+  left: 25px;
+  position: absolute;
+}
+.content .slide-banner .slide-show .logo-title p {
+  font-size: 44px;
+  color: #ffffff;
+}
+.content .slide-banner .slide-show .logo-title button {
+  padding: 12px 23px;
+  margin: 20px 0px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+  background-color: #d52b1e;
+  color: #fff;
+  cursor: pointer;
+}
+.content .slick-dots {
+  position: absolute;
+  bottom: 72px;
+  left: 50%;
+  transform: translate(-50%, 50px);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 0 30px;
+  font-size: 0px;
+}
+.content .slick-dots button {
+  font-size: 0px;
+  border-radius: 50%;
+  width: 50px;
+  height: 2px;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+}
+.content .slick-dots .slick-active button {
+  background-color: #d52b1e;
+}
+.content .product-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.content .product-content img {
+  width: 632px;
+  height: 418px;
+}
+.content .product-content .product-img {
+  cursor: pointer;
+  position: relative;
+}
+.content .product-content .product-img:hover img {
+  opacity: 0.8;
+}
+.content .product-content .product-img:hover .product-title {
+  background-color: #171718;
+}
+.content .product-content .product-img .product-title {
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 20px 10px;
+  bottom: 4px;
+  width: 340px;
+  height: 82px;
+  background-color: #d52b1e;
+  position: absolute;
+}
+.content .product-content .product-img .product-title p {
+  font-size: 24px;
+  color: #fff;
+}
+.content .product-content .product-img .product-title a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
