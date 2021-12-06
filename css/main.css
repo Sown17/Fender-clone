@@ -139,6 +139,9 @@ html {
 .content .slide-banner .slide-show img {
   width: 100%;
 }
+.content .slide-banner .slide-show {
+  position: relative;
+}
 .content .slide-banner .slide-show .logo-title {
   top: 200px;
   left: 25px;
@@ -325,6 +328,10 @@ html {
   line-height: 40px;
 }
 
+.static-content {
+  margin: 0 30px;
+  padding-bottom: 70px;
+}
 .static-content .title {
   padding-left: 30px;
   font-size: 30px;
@@ -342,6 +349,122 @@ html {
   left: 30px;
   background-color: #d52b1e;
   position: absolute;
+}
+.static-content .product-desc {
+  padding: 32px;
+  text-align: center;
+  position: relative;
+}
+.static-content .product-desc:after {
+  content: "NEW";
+  background-color: #d52b1e;
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  padding: 3px 7px;
+  left: 130px;
+  font-weight: 600;
+  color: #fff;
+}
+.static-content .product-desc img {
+  width: 100%;
+  width: 186px;
+  height: 186px;
+}
+.static-content .product-desc a {
+  text-align: start;
+  font-size: 16px;
+  margin-top: 40px;
+  height: 50px;
+  text-decoration: none;
+  color: #151414;
+  display: block;
+}
+.static-content .product-desc .product-color {
+  font-weight: bold;
+  text-align: end;
+}
+
+.footer {
+  padding: 0px 30px;
+  background-color: #121212;
+  color: #ede7e7;
+}
+.footer .footer-logo {
+  padding: 30px 0px;
+}
+.footer .global-footer {
+  display: flex;
+}
+.footer .global-footer__list {
+  border-top: 1px solid #4a4a4a;
+  margin: 16px;
+  flex: 1;
+  line-height: 20px;
+}
+.footer .global-footer__list p {
+  font-weight: bold;
+  padding: 30px 0px;
+  font-size: 16px;
+}
+.footer .global-footer__list a {
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: normal;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer .footer-social {
+  border-bottom: 1px solid #4a4a4a;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-social .footer-btn {
+  border: 1px solid #fff;
+  padding: 12px 19px;
+  border-radius: 30px;
+}
+.footer .footer-social .footer-btn button {
+  color: #fff;
+  font-weight: 900;
+  background-color: #121212;
+  border: none;
+  outline: none;
+}
+.footer .footer-social .footer-contact .fab {
+  padding-right: 20px;
+  font-size: 28px;
+  color: #4a4a4a;
+}
+.footer .footer-social .footer-contact .fab:hover {
+  color: #fff;
+}
+.footer .footer-copyright {
+  font-size: 14px;
+  padding: 20px 0px 50px;
+  display: flex;
+}
+.footer .footer-copyright .copyright-text {
+  flex: 1;
+}
+.footer .footer-copyright .copyright-notice {
+  flex: 1;
+}
+.footer .footer-copyright .copyright-notice ul {
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+.footer .footer-copyright .copyright-notice ul li {
+  display: inline-block;
+}
+.footer .footer-copyright .copyright-notice ul li a {
+  text-decoration: none;
+  color: #ccc;
+  padding-left: 30px;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
