@@ -11,6 +11,10 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
   max-width: 1230px;
 }
@@ -216,6 +220,128 @@ body {
   font-size: 24px;
   color: #fff;
   font-size: 20px;
+}
+
+.new-product {
+  border-bottom: 1px solid #7b7b7b;
+  margin: 0 30px;
+}
+.new-product .title {
+  padding-left: 30px;
+  font-size: 30px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: #2b2b2b;
+  position: relative;
+}
+.new-product .title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  top: 65px;
+  left: 30px;
+  background-color: #d52b1e;
+  position: absolute;
+}
+.new-product .product-desc {
+  padding: 32px;
+  text-align: center;
+  position: relative;
+}
+.new-product .product-desc:after {
+  content: "NEW";
+  background-color: #d52b1e;
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  padding: 3px 7px;
+  left: 130px;
+  font-weight: 600;
+  color: #fff;
+}
+.new-product .product-desc img {
+  width: 100%;
+  width: 156px;
+  height: 468px;
+}
+.new-product .product-desc a {
+  text-align: start;
+  font-size: 16px;
+  margin-top: 40px;
+  height: 50px;
+  text-decoration: none;
+  color: #151414;
+  display: block;
+  font-weight: 550;
+}
+.new-product .product-desc .product-color {
+  font-weight: bold;
+  text-align: end;
+}
+
+.fender-layout {
+  margin: 100px 20px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #aaaaaa;
+}
+.fender-layout .fender-product {
+  position: relative;
+}
+.fender-layout .fender-product::after {
+  top: -40px;
+  left: 0px;
+  position: absolute;
+  content: "FENDER FEED";
+  font-size: 40px;
+  padding: 20px 60px 70px 50px;
+  background-color: #d52b1e;
+  color: #fff;
+  width: 40%;
+  z-index: -1;
+  font-weight: bold;
+}
+.fender-layout .fender-product .fender-desc {
+  padding: 40px;
+  position: relative;
+}
+.fender-layout .fender-product .fender-desc img {
+  width: 100%;
+}
+.fender-layout .fender-product .fender-desc img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.fender-layout .fender-product .fender-desc .fender-link {
+  bottom: -30px;
+  position: absolute;
+  width: 75%;
+  height: 100px;
+  background-color: white;
+}
+.fender-layout .fender-product .fender-desc .fender-link a {
+  color: black;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.static-content .title {
+  padding-left: 30px;
+  font-size: 30px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: #2b2b2b;
+  position: relative;
+}
+.static-content .title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  top: 65px;
+  left: 30px;
+  background-color: #d52b1e;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */

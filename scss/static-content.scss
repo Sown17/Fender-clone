@@ -1,0 +1,20 @@
+.static-content{
+    .title{
+        padding-left: 30px;
+        font-size: 30px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: rgb(43, 43, 43);
+        position: relative;
+        &::after{
+            content: '';
+            width: 60px;
+            height: 4px;
+            top: 65px;
+            left: 30px;
+            background-color: #d52b1e;
+            position: absolute;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.fender-layout{
+    margin: 100px 20px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    .fender-product{
+        position: relative;
+        &::after{
+            top: -40px;
+            left: 0px;
+            position: absolute;
+            content: 'FENDER FEED';
+            font-size: 40px;
+            padding: 20px 60px 70px 50px;
+            background-color: #d52b1e;
+            color: #fff;
+            width: 40%;
+            z-index: -1;
+            font-weight: bold;
+        }
+        .fender-desc{
+            padding: 40px;
+            position: relative;
+            img{
+                width: 100%;
+                &:hover{
+                    cursor: pointer;
+                    opacity: .8;
+                }
+            }
+            .fender-link{
+                bottom: -30px;
+                position: absolute;
+                width: 75%;
+                height: 100px;
+                background-color: rgb(255, 255, 255);
+                a{
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
