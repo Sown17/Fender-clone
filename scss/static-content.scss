@@ -55,4 +55,20 @@
             text-align: end;
         }
     }
+    @include maxWidth(1024px){
+        .product-desc {
+            &:after{
+                top: 0px;
+                left: 65px;
+              
+            }
+            img{
+                width: 106px;
+                height: 106px;
+            }
+            .product-color{
+                padding-top: 40px;
+            }
+         }
+    }
 }

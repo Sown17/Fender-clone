@@ -118,19 +118,153 @@ html {
 }
 .header .header-bottom .bottom-seach {
   margin-right: 18px;
-  padding: 5px 23px;
   font-size: 20px;
   color: #6a6a6a;
   border-left: 1px solid #d6d6d6;
   border-right: 1px solid #d6d6d6;
+  cursor: pointer;
+}
+.header .header-bottom .bottom-seach .fa-search {
+  padding: 26px;
+}
+.header .header-bottom .seach-click {
+  display: none;
+  border-top: #ccc 1px solid;
+  width: 100%;
+  height: 205px;
+  background-color: #fff;
+  position: absolute;
+  left: 0px;
+  top: 62px;
+  z-index: 1000;
+}
+.header .header-bottom .seach-click img {
+  position: absolute;
+  top: 20px;
+  left: 620px;
+}
+.header .header-bottom .seach-click input {
+  margin-left: 280px;
+  width: 770px;
+  height: 76px;
+  padding-left: 90px;
+  font-size: 15px;
+  color: #ccc;
+  margin-top: 110px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.header .header-bottom .seach-click input:focus {
+  box-shadow: 0.3px 0.3px 0px 4px #f4cac7;
+}
+.header .header-bottom .seach-click .close {
+  top: 10px;
+  left: 40px;
+  font-size: 30px;
+  color: #d52b1e;
+  position: absolute;
+}
+.header .header-bottom .seach-click .close:hover {
+  opacity: 0.8;
+}
+.header .header-bottom .seach-click .fa-search {
+  position: absolute;
+  top: 110px;
+  left: 280px;
+  color: #d52b1e;
+}
+.header .header-bottom .hamburger {
+  display: none;
+}
+.header .header-bottom .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #666;
 }
 .header .sticky {
   position: fixed;
   top: 0px;
-  z-index: 1000;
+  z-index: 100;
   width: 100%;
   background-color: #fff;
   transition: 0.5s;
+}
+@media (max-width: 1024px) {
+  .header .bottom-logo {
+    margin-left: 60px;
+  }
+  .header .bottom-nav {
+    position: relative;
+  }
+  .header .bottom-nav .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 125px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    width: 60%;
+    z-index: 100;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    text-align: start;
+    transition: 0.4s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    border-radius: 0px;
+  }
+  .header .bottom-nav .nav-menu .nav-link {
+    color: #666;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .header .bottom-nav .nav-menu .nav-link .fa-caret-down {
+    width: 100px;
+    padding-top: 15px;
+    float: right;
+  }
+  .header .bottom-nav .nav-menu .nav-link:hover .fa-caret-down {
+    transform: rotate(0deg);
+  }
+  .header .bottom-nav .nav-menu.active {
+    left: 0;
+  }
+  .header .bottom-nav .nav-item {
+    margin: 0.3rem 0;
+  }
+  .header .bottom-nav .hamburger {
+    left: -388px;
+    top: 20px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+  }
+  .header .bottom-nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header .bottom-nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header .bottom-nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+.header .header-bottom .seach-click input {
+  margin-left: 120px;
+  width: 520px;
+}
+.header .header-bottom .seach-click .fa-search {
+  top: 110px;
+  left: 120px;
+  color: #d52b1e;
+}
+.header .header-bottom .seach-click img {
+  left: 350px;
 }
 
 .content .slide-banner {
@@ -224,10 +358,25 @@ html {
   color: #fff;
   font-size: 20px;
 }
+@media (max-width: 1024px) {
+  .content .slide-banner .slide-show .logo-title {
+    top: 100px;
+  }
+  .content .product-content img {
+    width: 360px;
+    height: 218px;
+  }
+  .content .product-content .product-img .product-title {
+    width: 100%;
+    bottom: -78px;
+    padding-bottom: 50px;
+  }
+}
 
 .new-product {
   border-bottom: 1px solid #7b7b7b;
   margin: 0 30px;
+  padding-bottom: 100px;
 }
 .new-product .title {
   padding-left: 30px;
@@ -248,6 +397,8 @@ html {
   position: absolute;
 }
 .new-product .product-desc {
+  background-color: #e6e6e6;
+  height: 100%;
   padding: 32px;
   text-align: center;
   position: relative;
@@ -257,7 +408,7 @@ html {
   background-color: #d52b1e;
   font-size: 14px;
   position: absolute;
-  top: 0px;
+  top: -10px;
   padding: 3px 7px;
   left: 130px;
   font-weight: 600;
@@ -267,6 +418,7 @@ html {
   width: 100%;
   width: 156px;
   height: 468px;
+  mix-blend-mode: darken;
 }
 .new-product .product-desc a {
   text-align: start;
@@ -281,6 +433,24 @@ html {
 .new-product .product-desc .product-color {
   font-weight: bold;
   text-align: end;
+}
+@media (max-width: 1024px) {
+  .new-product .title {
+    margin-top: 80px;
+  }
+  .new-product .title::after {
+    top: 58px;
+  }
+  .new-product .product-desc img {
+    width: 105px;
+    height: 357px;
+  }
+  .new-product .product-desc::after {
+    left: 68px;
+  }
+  .new-product .product-desc a {
+    width: 150px;
+  }
 }
 
 .fender-layout {
@@ -326,6 +496,29 @@ html {
   color: black;
   text-decoration: none;
   line-height: 40px;
+}
+@media (max-width: 1024px) {
+  .fender-layout {
+    padding-top: 20px;
+  }
+  .fender-layout .fender-product::after {
+    text-align: center;
+    top: -80px;
+    left: 0px;
+    width: 96%;
+    left: 15px;
+    font-size: 40px;
+    padding: 20px 60px 70px 50px;
+  }
+  .fender-layout .fender-product .fender-desc {
+    padding: 0;
+  }
+  .fender-layout .fender-product .fender-desc img {
+    padding-bottom: 100px;
+  }
+  .fender-layout .fender-product .fender-desc .fender-link {
+    bottom: 42px;
+  }
 }
 
 .static-content {
@@ -383,6 +576,19 @@ html {
 .static-content .product-desc .product-color {
   font-weight: bold;
   text-align: end;
+}
+@media (max-width: 1024px) {
+  .static-content .product-desc:after {
+    top: 0px;
+    left: 65px;
+  }
+  .static-content .product-desc img {
+    width: 106px;
+    height: 106px;
+  }
+  .static-content .product-desc .product-color {
+    padding-top: 40px;
+  }
 }
 
 .footer {
@@ -465,6 +671,12 @@ html {
   color: #ccc;
   padding-left: 30px;
   line-height: 30px;
+}
+@media (max-width: 1024px) {
+  .footer .footer-copyright {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

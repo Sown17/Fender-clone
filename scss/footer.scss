@@ -81,4 +81,10 @@
 
         }
     }
+    @include maxWidth(1024px){
+        .footer-copyright{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
 }

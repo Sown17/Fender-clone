@@ -93,4 +93,27 @@
             }
         }
     }
+    @include maxWidth(1024px){
+        .slide-banner{
+            .slide-show{
+                .logo-title {
+                    top: 100px;
+                }
+            }
+        }
+        .product-content{
+            img{
+                width: 360px;
+                height: 218px;
+            }
+            .product-img{
+                .product-title{
+                    width: 100%;
+                    bottom: -78px;
+                    padding-bottom: 50px;
+                    
+                }
+            }
+        }
+    }
 }

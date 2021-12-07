@@ -1,6 +1,7 @@
 .new-product{
     border-bottom: 1px solid rgb(123, 123, 123);
     margin: 0 30px;
+    padding-bottom: 100px;
     .title{
         padding-left: 30px;
         font-size: 30px;
@@ -20,6 +21,8 @@
         }
     }
     .product-desc{
+        background-color: rgb(230, 230, 230);
+        height: 100%;
         padding: 32px;
         text-align: center;
         position: relative;
@@ -28,17 +31,17 @@
             background-color: #d52b1e;
             font-size: 14px;
             position: absolute;
-            top: 0px;
+            top: -10px;
             padding: 3px 7px;
             left: 130px;
             font-weight: 600;
             color: #fff;
         }
         img{
-            // border: 1px solid rgb(145, 145, 145);
             width: 100%;
             width: 156px;
             height: 468px;
+            mix-blend-mode: darken;
         }
         a{
             text-align: start;
@@ -54,6 +57,26 @@
         .product-color{
             font-weight: bold;
             text-align: end;
+        }
+    }
+    @include maxWidth(1024px){
+        .title{
+            margin-top: 80px;
+            &::after{
+                top: 58px;
+            }
+        }
+        .product-desc{
+            img{
+                width: 105px;
+                height: 357px;
+            }
+            &::after{
+                left: 68px;
+            }
+            a{
+                width: 150px;
+            }
         }
     }
 }
