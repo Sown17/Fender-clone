@@ -116,4 +116,31 @@
             }
         }
     }
+    @include maxWidth(576px){
+        .slide-banner{
+            .slide-show{
+                .logo-title{
+                    top: 10px;
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .product-content{
+            padding: 0px 10px;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+                display: block;
+            }
+            .product-img{
+                .product-title{
+                    position:unset;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }

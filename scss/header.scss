@@ -212,7 +212,6 @@
                     font-size: 18px;
                     font-weight: 600;
                     .fa-caret-down{
-                        width: 100px;
                         padding-top: 15px;
                         float: right;
 
@@ -252,23 +251,71 @@
                 transform: translateY(-8px) rotate(-45deg);
             }
         }
-    }
-    .header-bottom{
-        .seach-click{
-            input{
-                margin-left: 120px;
-                width: 520px;
-            }
-            .fa-search{
-                top: 110px;
-                left: 120px;
-                color: #d52b1e;
-            }
-            img{
-                left: 350px;
-            }
-    
-        }
+        .header-bottom{
+            .seach-click{
+                input{
+                    margin-left: 120px;
+                    width: 520px;
+                }
+                .fa-search{
+                    top: 110px;
+                    left: 120px;
+                    color: #d52b1e;
+                }
+                img{
+                    left: 320px;
+                }
         
+            }
+            
+        }
+    }
+    @include maxWidth(576px){
+        .bottom-logo{
+            margin-left: 108px;
+            img{
+                padding-top: 4px;
+            }
+        }
+        .header-top{
+            .top-nav{
+                .nav-active{
+                    &::after{
+                        top: -4px;
+                    }
+                }
+                li{
+                    padding: 5px 18px;
+                }
+            }
+        }
+        .bottom-nav{
+            .hamburger{
+                left: -230px;
+            }
+            .nav-menu{
+                top: 122px;
+                width: 100%;
+
+            }
+        }
+        .bottom-seach{
+            .seach-click{
+                input{
+                    margin-left: 60px;
+                    width: 260px;
+                    padding-left:70px;
+                }
+                .fa-search{
+                    top: 110px;
+                    left: 60px;
+                    color: #d52b1e;
+                }
+                img{
+                    left: 160px;
+                }
+        
+            }
+        }
     }
 }

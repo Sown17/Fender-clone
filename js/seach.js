@@ -1,6 +1,6 @@
 $(".close").click(function(){
     $(".seach-click").hide();
 });
-$(".fas").click(function(){
+$(".show-seach").click(function(){
     $(".seach-click").show();
 });

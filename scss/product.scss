@@ -61,6 +61,7 @@
     }
     @include maxWidth(1024px){
         .title{
+
             margin-top: 80px;
             &::after{
                 top: 58px;
@@ -77,6 +78,20 @@
             a{
                 width: 150px;
             }
+        }
+    }
+    @include maxWidth(576px){
+        .product-desc{
+            background-color: #fff;
+            a{
+                font-size: 13px;
+            }
+            img{
+                background-blend-mode: darken;
+            }
+        }
+        .title{
+            font-size: 20px;
         }
     }
 }

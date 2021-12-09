@@ -64,4 +64,22 @@
             }
         }
     }
+    @include maxWidth(576px){
+        .fender-product{
+            &::after{
+                top: -60px;
+                left: 0px;
+                width: 100%;
+                content: 'FENDER FEED';
+                font-size: 20px;
+        
+            }
+            .fender-desc{
+                .fender-link{
+                    width: 100%;
+                    right: 0px;
+                }
+            }
+        }
+    }
 }
